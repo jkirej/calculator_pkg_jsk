@@ -1,5 +1,5 @@
 from calculator_pkg_jsk import Calculator
-from calculator_pkg_jks.file_calculator import FileCalculator
+from calculator_pkg_jsk.file_calculator import FileCalculator
 from pathlib import Path
 
 print(Calculator().add(1,2))

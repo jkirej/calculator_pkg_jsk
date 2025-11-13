@@ -1,7 +1,10 @@
 from .calc import Calculator
+
+
 def main():
     print("Im in main!")
-    print(Calculator().add(3,3))
+    print(Calculator().add(3, 3))
 
-if __name == "__main__":
+
+if __name__ == "__main__":
     main()

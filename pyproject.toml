@@ -1,11 +1,22 @@
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
-
 [project]
 name = "calculator_pkg_jsk"
 version = "0.1.0"
-
+dependencies = [
+	"tqdm ~= 4.0"
+	
+]
 [project.scripts]
-icalculator_pkg_jsk = "calculator_pkg_jsk.__main__:main"
+calculator_pkg_jsk = "calculator_pkg_jsk.__main__:main"
 
+[project.optional-dependencies]
+test = [
+	"types-tqdm",
+	"pytest",
+	"mypy",
+	"ruff",
+	"pre-commit",
+		"tox"
+]
